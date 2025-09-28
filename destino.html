@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fondo/flores.css">
+</head>
+<body class="fade-in">
+    <div id="fondoFlores">
+        <iframe src="fondo/flores.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="destino">
+        <h1>Eh.. bueno, solo espero que te guste..</h1>
+        <a href="Respuesta_si/si.html" class="btn" id="btn_si">Continuar</a>
+    </div>
+    <div>
+        <a href="index.html" class="btn" id="btn-volver">volver</a>
+    </div>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+        document.body.addEventListener('animationend', function(e) {
+            if (e.animationName === 'fadeIn') {
+                document.body.classList.remove('fade-in');
+            }
+        });
+    });
+
+    document.getElementById('btn-volver').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 900); // igual al tiempo de la animación
+    });
+
+    document.getElementById('btn_si').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.body.classList.add('fade-out');
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 900); // igual al tiempo de la animación
+    });
+    </script>
+
+
+</body>
+</html>

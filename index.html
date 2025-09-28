@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Index con Flores</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fondo/flores.css">
+</head>
+<body class="fade-in">
+  <div id="fondoFlores">
+    <iframe src="fondo/flores.html" frameborder="0"></iframe>
+  </div>
+  <!-- Tu contenido principal -->
+  <div class="contenedor">
+    <h1>Hola..</h1>
+    <p>Como estas Andreina?</p>
+    <a href="destino.html" class="btn" id="btn-destino">Dame click</a>
+  </div>
+
+  <script src="fondo/flores.js"></script>
+
+  <script>
+  window.addEventListener('DOMContentLoaded', function() {
+    document.body.addEventListener('animationend', function(e) {
+        if (e.animationName === 'fadeIn') {
+            document.body.classList.remove('fade-in');
+        }
+    });
+  });
+
+
+  document.getElementById('btn-destino').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.body.classList.add('fade-out');
+    setTimeout(() => {
+        window.location.href = this.href;
+    }, 900); // igual al tiempo de la animación
+  });
+  </script>
+
+</body>
+</html>
