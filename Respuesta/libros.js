@@ -2,23 +2,7 @@ const prevBtn = document.querySelector('#prev-btn');
 const nextBtn = document.querySelector('#next-btn');
 const libro = document.querySelector('#libro');
 
-const pagina1 = document.querySelector('#pagina1');
-const pagina2 = document.querySelector('#pagina2');
-const pagina3 = document.querySelector('#pagina3');
-const pagina4 = document.querySelector('#pagina4');
-const pagina5 = document.querySelector('#pagina5');
-const pagina6 = document.querySelector('#pagina6');
-const pagina7 = document.querySelector('#pagina7');
-const pagina8 = document.querySelector('#pagina8');
-const pagina9 = document.querySelector('#pagina9');
-const pagina10 = document.querySelector('#pagina10');
-const pagina11 = document.querySelector('#pagina11');
-const pagina12 = document.querySelector('#pagina12');
-const pagina13 = document.querySelector('#pagina13');
-const pagina14 = document.querySelector('#pagina14');
-const pagina15 = document.querySelector('#pagina15');
-const pagina16 = document.querySelector('#pagina16');
-const pagina17 = document.querySelector('#pagina17');
+
 
 prevBtn.addEventListener('click', goPrevPage);
 nextBtn.addEventListener('click', goNextPage);

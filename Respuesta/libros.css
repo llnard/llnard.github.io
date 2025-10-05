@@ -91,6 +91,8 @@ i {
   font-size: 30px;
   color: gray;
 }
+
+
 /*orden de las hojas*/
 #pagina1{
   z-index: 17;
@@ -107,32 +109,32 @@ i {
 #pagina5{
   z-index: 13;
 }
-#pagina6{
-  z-index: 12; /**/
+#pagina6, #frente6, #f6{
+  z-index: 12; /*video 1*/
 }
 #pagina7{
   z-index: 11;
 }
-#pagina8{
-  z-index: 10; /**/
+#pagina8, #frente8, #f8{
+  z-index: 10; /*video 2*/
 }
 #pagina9{
   z-index: 9;
 }
-#pagina10{
-  z-index: 8; /**/
+#pagina10, #video3{
+  z-index: 8; /*video 3*/
 }
 #pagina11{
   z-index: 7;
 }
-#pagina12{
-  z-index: 6; /**/
+#pagina12, #frente12, #f12{
+  z-index: 6; /*video 4*/
 }
 #pagina13{
   z-index: 5;
 }
-#pagina14{
-  z-index: 4; /**/
+#pagina14, #frente14, #f14{
+  z-index: 4; /*video 5*/
 }
 #pagina15{
   z-index: 3;
@@ -241,7 +243,7 @@ i {
   bottom: 50px;
   left: 30%;
   transform: translateX(-50% );
-  z-index: 7;
+  z-index: 9;
   border-radius: 100%;
 }
 #repeat-btn3 {
@@ -249,7 +251,7 @@ i {
   bottom: 50px;
   left: 70%;
   transform: translateX(-50% );
-  z-index: 7;
+  z-index: 9;
   border-radius: 100%;
 }
 
