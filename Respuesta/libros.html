@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../nieve/nieve.css">
     <link rel="stylesheet" href="libros.css">
     <script src="libros.js" defer></script>
+    <script src="videos.js" defer></script>
     <script src="../nieve/nieve.js" defer></script>
     <script src="https://kit.fontawesome.com/8c5f6b6e01.js" crossorigin="anonymous"></script>
 </head>
@@ -93,10 +94,13 @@
       <div id="pagina6" class="papel">
           <div class="frente">
             <div id="f6" class="frente-contenido">
-              <img src="../imagenes/Paginas/8.png" alt="Frente 6">
-              <video id="video1" controls>
-                <source src="../videos/Bombon video1.mp4" type="video/mp4">
+              <video id = "video1">
+                <source src="../videos/Video1.mp4" type="video/mp4">
               </video>
+              <div class="video-btns1">
+                <button id="play-btn1" class="btn"><i class="fas fa-play"></i></button>
+                <button id="repeat-btn1" class="btn"><i class="fas fa-redo"></i></button>
+              </div>
             </div>
           </div>
           <div class="reves">
@@ -122,10 +126,13 @@
       <div id="pagina8" class="papel">
           <div class="frente">
             <div id="f8" class="frente-contenido">
-              <img src="../imagenes/Paginas/12.png" alt="Frente 8">
-              <video id="video2" controls>
-                <source src="../videos/Nothing on you video2.mp4" type="video/mp4">
+              <video id = "video2">
+                <source src="../videos/Video2.mp4" type="video/mp4">
               </video>
+              <div class="video-btns2">
+                <button id="play-btn2" class="btn"><i class="fas fa-play"></i></button>
+                <button id="repeat-btn2" class="btn"><i class="fas fa-redo"></i></button>
+              </div>
             </div>
           </div>
           <div class="reves">
@@ -151,10 +158,13 @@
       <div id="pagina10" class="papel">
           <div class="frente">
             <div id="f10" class="frente-contenido">
-              <img src="../imagenes/Paginas/16.png" alt="Frente 10">
-              <video id="video3" controls>
-                <source src="../videos/just_way_you_are.mp4" type="video/mp4">
+              <video id = "video3">
+                <source src="../videos/Video3.mp4" type="video/mp4">
               </video>
+              <div class="video-btns3">
+                <button id="play-btn3" class="btn"><i class="fas fa-play"></i></button>
+                <button id="repeat-btn3" class="btn"><i class="fas fa-redo"></i></button>
+              </div>
             </div>
           </div>
           <div class="reves">
@@ -180,10 +190,7 @@
       <div id="pagina12" class="papel">
           <div class="frente">
             <div id="f12" class="frente-contenido">
-              <img src="../imagenes/Paginas/20.png" alt="Frente 12">
-              <video id="video4" controls>
-                <source src="../videos/Bombon video1.mp4" type="video/mp4">
-              </video>
+
             </div>
           </div>
           <div class="reves">
@@ -285,6 +292,7 @@
         window.location.href = this.href;
     }, 900); // igual al tiempo de la animación
   });
+
   </script>
 
 
