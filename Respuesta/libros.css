@@ -24,53 +24,63 @@ body {
   border: none;
 }
 
-.libro{
-  position: relative;
-  width: 350px;
-  height: 500px;
-  transition: transform 1.0s;
+/* Book */
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 1.0s;
 }
-.papel{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  perspective: 1500px;
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
 }
-.frente,
-.reves{
-  background-color: #000000; /*color de la hoja*/
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0 ;
-  transform-origin: left;
-  transition: transform 1.0s;
+
+.front,
+.back {
+    background-color: rgb(4, 4, 4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 1.0s;
 }
-.frente{
-  z-index: 1;
-  backface-visibility: hidden;
-  border-left: 3px solid rgb(0, 0, 0)
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid rgb(0, 0, 0);
 }
-.reves{
-  z-index: 0;
+
+.back {
+    z-index: 0;
 }
-.frente-contenido,
-.reves-contenido{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.reves-contenido{
-  transform: rotateY(180deg);
+
+.back-content {
+    transform: rotateY(180deg)
 }
-.flipped .frente,
-.flipped .reves{
-  transform: rotateY(-180deg);
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
 }
 
 /*botones*/
@@ -79,7 +89,7 @@ button{
   background-color: transparent;
   cursor: pointer;
   margin: 10px;
-  transition: transform 0.8s;
+  transition: transform 1.0s;
 }
 button:focus{
   outline: none;
@@ -93,58 +103,61 @@ i {
 }
 
 
-/*orden de las hojas*/
-#pagina1{
-  z-index: 17;
+/* Paper stack order */
+#p1 {
+    z-index: 17;
 }
-#pagina2{
-  z-index: 16;
+
+#p2 {
+    z-index: 16;
 }
-#pagina3{
-  z-index: 15;
+
+#p3 {
+    z-index: 15;
 }
-#pagina4{
-  z-index: 14;
+#p4 {
+    z-index: 14;
 }
-#pagina5{
-  z-index: 13;
+#p5 {
+    z-index: 13;
 }
-#pagina6, #frente6, #f6{
-  z-index: 12; /*video 1*/
+#p6 {
+    z-index: 12;
 }
-#pagina7{
-  z-index: 11;
+#p7 {
+    z-index: 11;
 }
-#pagina8, #frente8, #f8{
-  z-index: 10; /*video 2*/
+#p8 {
+    z-index: 10;
 }
-#pagina9{
-  z-index: 9;
+#p9 {
+    z-index: 9;
 }
-#pagina10, #video3{
-  z-index: 8; /*video 3*/
+#p10 {
+    z-index: 8;
 }
-#pagina11{
-  z-index: 7;
+#p11 {
+    z-index: 7;
 }
-#pagina12, #frente12, #f12{
-  z-index: 6; /*video 4*/
+#p12 {
+    z-index: 6;
 }
-#pagina13{
-  z-index: 5;
+#p13 {
+    z-index: 5;
 }
-#pagina14, #frente14, #f14{
-  z-index: 4; /*video 5*/
+#p14 {
+    z-index: 4;
 }
-#pagina15{
-  z-index: 3;
+#p15 {
+    z-index: 3;
 }
-#pagina16{
-  z-index: 2;
+#p16 {
+    z-index: 2;
 }
-#pagina17{
-  z-index: 1;
+#p17 {
+    z-index: 1;
 }
+
 
 /*animaciones*/
 .fade-out {
